@@ -9,19 +9,19 @@ html {
     scroll-behavior: smooth;
 }
 
-a{
+a {
     font-family: 'Sofia Sans', sans-serif;
     font-weight: 300;
     text-decoration: none;
-    color: rgb(2, 26, 49);
     cursor: pointer;
+    transition: .2s ease;
 }
 
 a:hover {
     font-family: 'Sofia Sans', sans-serif;
     font-weight: 900;
-    color: lightslategrey;
     cursor: pointer;
+    box-shadow: inset 0 -2px 0 #ffffff;
 }
 
 /* estilos barras de menu superior de navegación */
@@ -44,10 +44,20 @@ a:hover {
 
 }
 
-.navegar button :hover {
+.navegar a {
     font-family: 'Sofia Sans', sans-serif;
-    font-weight: 800;
-    color: rgb(0, 27, 150);
+    font-weight: 100;
+    color: rgb(162, 211, 218);
+    padding: 5px;
+
+}
+
+.navegar a:hover {
+    font-family: 'Sofia Sans', sans-serif;
+    font-weight: 300;
+    color: white;
+    background-color: rgb(115, 128, 139);
+    padding: 5px;
 
 }
 
@@ -61,11 +71,8 @@ a:hover {
 
 .navegar button {
     border: 0;
-    background-color: rgba(255, 255, 255, 0);
-    font-family: 'Sofia Sans', sans-serif;
-    font-weight: 600;
-    font-size: 0.75rem;
     cursor: pointer;
+    background-color: rgba(255, 255, 255, 0);
 }
 
 /* estilos cabezal con reseña */
@@ -78,7 +85,7 @@ a:hover {
 
 #cabezal h1 {
     font-family: 'Merriweather', serif;
-    font-size: 3em;
+    font-size: 3rem;
     font-weight: 900;
     color: rgb(90, 90, 90);
     text-align: left;
@@ -100,8 +107,7 @@ a:hover {
     padding-bottom: 25px;
 }
 
-.fotoperfil
-{
+.fotoperfil {
     float: left;
     width: 300px;
     height: 300px;
@@ -124,17 +130,29 @@ a:hover {
     padding: 10px;
 }
 
-.icono-datos{
-    max-width: 25px;
-    height: auto;
-    padding-right: 5px;
-    padding-left: 5px;
-    }
-
 .icono-seccion {
     max-width: 40px;
     height: auto;
     padding-right: 5px;
+}
+
+/* estilos habilidades */
+
+.habilidad
+{
+    background-color: rgb(240, 240, 240);
+    padding: 1rem 1.25rem;
+    float: left;
+    width: 20%;
+}
+
+.habilidad li
+{
+    font-family: 'Sofia Sans', sans-serif;
+    font-size: 0.75rem;
+    font-weight: 200;
+    font-style: italic;
+    list-style: none;
 }
 
 /* estilos articulos */
@@ -147,7 +165,6 @@ a:hover {
 }
 
 .articulo h2 {
-    padding-top: 20px;
     font-family: 'Sofia Sans', sans-serif;
     font-weight: 900;
     display: block;
@@ -178,23 +195,20 @@ a:hover {
 
 /* Pie de pagina */
 
-#pie_pagina
-{
-    background-color:rgba(162, 211, 218, 0.5);
+#pie_pagina {
+    background-color: rgba(162, 211, 218, 0.5);
     text-align: center;
 }
 
-#pie_pagina h2
-{
+#pie_pagina h2 {
     font-family: 'Sofia Sans', sans-serif;
     font-weight: 300;
     font-size: 1rem;
     padding-top: 25px;
-    color:rgb(2, 26, 49)
+    color: rgb(2, 26, 49)
 }
 
-#pie_pagina h3
-{
+#pie_pagina h3 {
     padding: 10px;
     font-family: 'Sofia Sans', sans-serif;
     font-weight: 500;
@@ -203,16 +217,14 @@ a:hover {
     color: rgb(255, 255, 255);
 }
 
-#pie_pagina a
-{
+#pie_pagina a {
     padding: 10px;
     font-family: 'Sofia Sans', sans-serif;
     font-weight: 500;
     font-size: 2rem;
 }
 
-#pie_pagina a:hover
-{
+#pie_pagina a:hover {
     padding: 10px;
     font-family: 'Sofia Sans', sans-serif;
     font-weight: 900;
@@ -412,7 +424,3 @@ a:hover {
 .collapse:not(.show) {
     display: none;
 }
-
-.d-inline-block {
-    display: inline-block !important;
-  }
